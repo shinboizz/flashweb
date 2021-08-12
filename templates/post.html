@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block body %}
+
+{% set fname = 'assets/img/' + post.img_file %}
+  <header class="masthead" style="background-image: url('{{ url_for('static', filename=fname)}}')">
+            <div class="container px-4 px-lg-5 text-center">
+                <h1 class="mb-1" style="color:Violet;font-family:courier;">{{post.title}}</h1>
+                <h3 class="mb-5"><em>“I did my job. I’d do it again.”</em></h3>
+                 <span class="meta">Posted by
+                <a href="#">Admin</a>
+                on {{post.date}}</span>
+            </div>
+        </header>
+    <!-- Main Content -->
+   <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto " style="color:black;font-size:40px;">
+              <span class="container"> This is content:</span>
+            {{post.content}}
+
+
+          </div>
+        </div>
+      </div>
+    </article>
+    {% endblock %}

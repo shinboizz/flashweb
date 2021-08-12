@@ -1,0 +1,22 @@
+{
+    "params": {
+        "local_server":"True",
+        "blog_name": "AlabaTrap",
+        "local_uri": "mysql://root:@localhost/myflask",
+        "prod_uri":  "mysql://root:@localhost/myflask",
+        "fb_url": "https://facebook.com/phule",
+        "tw_url": "https://twitter.com/phule",
+        "gh_url": "https://github.com/shinboizz",
+        "tag_line": "Heaven for programmers",
+        "gmail-user":"141801645@dntu.edu.vn",
+        "gmail-password":"Lequangphu123",
+        "about_text": "Hi my name is harry and I create programming tutorials and I am a good boy",
+        "no_of_posts": 3,
+        "login_image":"login.svg",
+        "admin_user":"shinboizz",
+        "admin_password":"admin",
+        "upload_location":"C:\\Users\\User\\PycharmProjects\\webflask\\static"
+
+
+    }
+}
