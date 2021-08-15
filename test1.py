@@ -1,14 +1,12 @@
-from flask import Flask, render_template
+from turtle import *
+s=Screen()
+s.setup(550,600,330,10)
+s.bgcolor('green')
 
-app = Flask(__name__)
+t=Turtle()
+t.shape('turtle')
+t.color('white')
+t.pensize(5)
+s.onclick(t.goto)
 
-@app.route("/")
-def hello():
-    return render_template('index.html')
-
-@app.route("/shin")
-def shin():
-    name ='shin'
-    return render_template('about.html', name2 = name)
-
-app.run(debug=True)
+done()

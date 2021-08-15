@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request,session,redirect
+from flask import Flask, render_template, request,session,redirect,url_for
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 from flask_mail import Mail
@@ -87,16 +87,18 @@ def about():
 
 @app.route("/dashboard", methods=['GET', 'POST'])
 def dashboard():
-    if "user" in session and session['user']==params['admin_user']:
+
+    '''
+    if ("user" in session and session['user'] == params['admin_user']):
         posts = Posts.query.all()
         return render_template("dashboard.html", params=params, posts=posts)
+        '''
 
-    if request.method=="POST":
+    if request.method == "POST":
         username = request.form.get("uname")
-        userpass = request.form.get("upass")
-        if username==params['admin_user'] and userpass==params['admin_password']:
-            # set the session variable
-            session['user']=username
+        userpass = request.form.get("pass")
+        if (username == params['admin_user'] and userpass == params['admin_password']):
+            session['user'] = username
             posts = Posts.query.all()
             return render_template("dashboard.html", params=params, posts=posts)
 
