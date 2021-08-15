@@ -4,7 +4,7 @@
         "blog_name": "AlabaTrap",
         "local_uri": "mysql://root:@localhost/myflask",
         "prod_uri":  "mysql://root:@localhost/myflask",
-        "fb_url": "https://facebook.com/phule",
+        "fb_url": "https://www.facebook.com/profile.php?id=100004923760757",
         "tw_url": "https://twitter.com/phule",
         "gh_url": "https://github.com/shinboizz",
         "tag_line": "Heaven for programmers",
